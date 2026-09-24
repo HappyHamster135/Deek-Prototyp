@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Utforska Tumacs pumpar, blandare och lyftutrustning. Hitta produktinformation, produktblad och rätt kontakt för ditt projekt.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#263e33">
+  <title>Tumac – Pumpar, blandare & lyftutrustning</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="products.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="toppen">
+  <a class="skip-link" href="#produkter">Hoppa till produkterna</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#toppen" aria-label="Tumac – till startsidan"><span>TUMAC</span><small>SWEDEN</small></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Meny <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Huvudmeny">
+      <a href="#produkter">Produkter <span aria-hidden="true">⌄</span></a>
+      <a href="#service">Reservdelar & service <span aria-hidden="true">⌄</span></a>
+      <button class="nav-button" data-info="about">Om Tumac <span aria-hidden="true">⌄</span></button>
+      <button class="button outline header-contact" data-contact>Kontakta oss <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Byggt för jobbet.<br>Gjort för att hålla.</h1>
+        <p>Pumpar, blandare och lyftutrustning. Vi hjälper dig att hitta rätt utrustning för nästa projekt.</p>
+        <div class="hero-actions"><a class="button yellow" href="#produkter">Utforska produkterna <span aria-hidden="true">↗</span></a><button class="text-button" data-contact>Prata med oss <span aria-hidden="true">→</span></button></div>
+      </div>
+      <figure class="hero-media"><img src="assets/hero.png" alt="Tumacs MP85 blandarpump i en illustrerad verkstadsmiljö" width="1448" height="1086" fetchpriority="high"><figcaption>TUMAC / UTRUSTNING FÖR BYGG & INDUSTRI</figcaption></figure>
+    </section>
+    <div class="category-band"><div class="category-links wrap">
+      <a href="#produkter" data-category="pump"><span class="number">01</span><span>Pumpar & blandare <b aria-hidden="true">↗</b></span></a>
+      <a href="#produkter" data-category="lift"><span class="number">02</span><span>Hissar & lyftutrustning <b aria-hidden="true">↗</b></span></a>
+      <a href="#produkter" data-category="parts"><span class="number">03</span><span>Reservdelar & tillbehör <b aria-hidden="true">↗</b></span></a>
+    </div></div>
+    <section id="produkter" class="catalog wrap" aria-labelledby="catalog-title">
+      <div class="section-heading"><h2 id="catalog-title">Rätt maskin.<br>Rätt förutsättningar.</h2><p>Utforska vårt sortiment av pumpar,<br class="desktop-only"> blandare och lyftutrustning.</p></div>
+      <div class="catalog-tools">
+        <div class="filters" role="group" aria-label="Filtrera produktkategori">
+          <button class="filter active" data-filter="all" aria-pressed="true">Alla produkter</button>
+          <button class="filter" data-filter="pump" aria-pressed="false">Pumpar & blandare</button>
+          <button class="filter" data-filter="lift" aria-pressed="false">Hissar & lyft</button>
+          <button class="filter" data-filter="parts" aria-pressed="false">Tillbehör</button>
+        </div>
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="7"></circle><path d="m15 15 6 6"></path></svg><span class="sr-only">Sök modell eller produkt</span><input id="search" type="search" placeholder="Sök modell eller produkt" autocomplete="off"></label>
+      </div>
+      <p id="result-count" class="result-count" role="status" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><h3>Ingen maskin hittades.</h3><p>Prova ett annat sökord eller visa hela sortimentet.</p><button class="button outline" id="reset-search">Visa alla produkter <span aria-hidden="true">↗</span></button></div>
+      <div class="catalog-bottom"><p>Behöver du hjälp att välja? Vi hjälper dig gärna.</p><button class="button outline" id="show-all">Visa alla produkter <span aria-hidden="true">↓</span></button></div>
+      <noscript><p>Aktivera JavaScript för produktkatalogen. Du når Tumac på <a href="tel:+46858027800">08-580 278 00</a> eller <a href="mailto:info@tumac.se">info@tumac.se</a>.</p></noscript>
+    </section>
+    <section id="service" class="service" aria-labelledby="service-title"><div class="service-inner wrap"><h2 id="service-title">Vi hjälper dig vidare.</h2><p>Reservdelar, produktval eller en fråga om din maskin. Prata med oss på Tumac.</p><button class="button yellow" data-contact>Kontakta oss <span aria-hidden="true">↗</span></button><a class="phone" href="tel:+46858027800">08-580 278 00</a></div></section>
+  </main>
+  <footer class="wrap"><div class="footer-main"><a class="brand footer-brand" href="#toppen" aria-label="Tumac – till toppen"><span>TUMAC</span><small>SWEDEN</small></a><p>Pumpar · Blandare · Lyftutrustning</p><a href="#toppen">Till toppen ↑</a></div><div class="footer-small"><p>© <span id="year"></span> Tumac AB</p><button class="link-button" data-info="prototype">Om prototypen</button><a href="mailto:info@tumac.se">info@tumac.se</a></div></footer>
+  <dialog id="product-dialog" aria-labelledby="product-title"><button class="close-dialog" aria-label="Stäng produktinformation" data-close>×</button><div id="product-detail"></div></dialog>
+  <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title"><button class="close-dialog" aria-label="Stäng kontakt" data-close>×</button><div class="dialog-pad"><p class="small-label">KONTAKT / TUMAC</p><h2 id="contact-title">Vad behöver du<br>hjälp med?</h2><p class="dialog-intro">Berätta om din maskin eller ditt projekt, så tar vi det därifrån.</p><div class="contact-direct"><a href="tel:+46858027800">08-580 278 00 ↗</a><a href="mailto:info@tumac.se">info@tumac.se ↗</a></div>
+      <form id="contact-form"><div class="form-row"><label>Ditt namn<input name="name" autocomplete="name" required maxlength="100" placeholder="För- och efternamn"></label><label>Företag <span>(valfritt)</span><input name="company" autocomplete="organization" maxlength="150" placeholder="Företagsnamn"></label></div><label>E-post<input name="email" type="email" autocomplete="email" required maxlength="200" placeholder="namn@foretag.se"></label><label>Vad gäller det?<select name="subject"><option>Hjälp att välja produkt</option><option>Prisförfrågan</option><option>Reservdelar & service</option><option>Uthyrning</option><option>Övrig fråga</option></select></label><label>Ditt meddelande<textarea name="message" rows="4" required maxlength="3000" placeholder="Beskriv vad du behöver hjälp med. Ange gärna modell och serienummer."></textarea></label><p class="form-note">Prototyp: vi skapar ett utkast som du kan öppna i ditt e-postprogram. Inget skickas eller sparas på en server.</p><button class="button yellow" type="submit">Skapa e-postutkast <span aria-hidden="true">↗</span></button></form>
+      <section id="draft" hidden aria-labelledby="draft-title"><h3 id="draft-title" tabindex="-1">Ditt utkast är klart.</h3><p>Kontrollera texten och öppna sedan ditt e-postprogram för att skicka till info@tumac.se.</p><pre id="draft-text"></pre><div class="draft-actions"><a id="mail-link" class="button yellow" href="mailto:info@tumac.se">Öppna e-postprogram ↗</a><button id="edit-draft" class="text-button">Ändra uppgifter</button></div><p class="form-note">Om du inte har ett e-postprogram kan du kopiera texten till din webbmail. Meddelandet har inte skickats.</p></section>
+    </div></dialog>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><button class="close-dialog" aria-label="Stäng information" data-close>×</button><div class="dialog-pad" id="info-content"></div></dialog>
+</body>
+</html>

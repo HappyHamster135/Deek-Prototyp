@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+tumac-loopia-prototyp.zip
+design/desktop.png
+design/catalog.png
+design/mobile.png
